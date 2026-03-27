@@ -14,11 +14,11 @@ Design
 - Ferocity bonus to Attack Strength lowered to +1 from +2
 
 - Risk from Wildlife, Risk from Exposure, and negative Happiness levels now trigger states (Pressured by Wildlife/Exposure/Discontent, respectively), which lowers Production by -30%. 
-Maximum 1 of these per turn will trigger an Event instead of a Pressured state, making these events much less frequent and an opportunity to avoid the default Production malus.
+Maximum 1 of these per turn will trigger an Event instead of a Pressured state, making these events less repetitive and more of an opportunity to avoid the default Production malus.
 - Production modifier from population now split into adults (age 15+, 0.1/person) and children (age 5-14, 0.05/person)
 - Production cost of most producibles is decreased to account for overall lower Production
 - Increased baseline Food Forageable from all species to account for overall lower Production
-- Reworked many foraging bonuses from various species, converting most multiplicative bonuses to be additive, and lower overall
+- Reworked many foraging bonuses from various species, converting most multiplicative bonuses to be additive, and making them smaller overall
 
 - Risk of Disease now increases with Population once it is 30+, at 0.005/person
 - Urban Dwellings now increase Risk of Disease by +20% instead of +0.1
