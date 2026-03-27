@@ -1,1 +1,60 @@
+Test Branch 0.2.7-test 2026-03-27
 
+Design
+
+- Watchtowers now extend visibility in 3-tile radius when adjacent to Band
+- Watchtowers now provide Morale only when defending (both campsite and structures)
+- Caves and Standing Guard now provide Morale only when defending campsite, not structures
+- Morale boost from Standing Guard increased to +2 from +1
+- Enabled equipping Items in combat Units, and now such Items only affect the Unit they're equipped in
+- Added critical hit system, where some units have a chance of dealing double damage when attacking
+- Obsidian now grants +0.2 critical hit probability instead of an Attack Strength bonus
+- Sages clan now gives +0.05 critical hit probability
+- Added Tactician trait for Warmaster and Chief, which boosts critical hit probabilities
+- Ferocity bonus to Attack Strength lowered to +1 from +2
+
+- Risk from Wildlife, Risk from Exposure, and negative Happiness levels now trigger states (Pressured by Wildlife/Exposure/Discontent, respectively), which lowers Production by -30%. 
+Maximum 1 of these per turn will trigger an Event instead of a Pressured state, making these events much less frequent and an opportunity to avoid the default Production malus.
+- Production modifier from population now split into adults (age 15+, 0.1/person) and children (age 5-14, 0.05/person)
+- Production cost of most producibles is decreased to account for overall lower Production
+- Increased baseline Food Forageable from all species to account for overall lower Production
+- Reworked many foraging bonuses from various species, converting most multiplicative bonuses to be additive, and lower overall
+
+- Risk of Disease now increases with Population once it is 30+, at 0.005/person
+- Urban Dwellings now increase Risk of Disease by +20% instead of +0.1
+- Maker's Courage now decreases Risk of Disease instead of Risk from Wildlife
+- Health bonus from Healing Ceremonies increased to +10 from +5
+
+- Happiness levels now affect Fertility as well
+- Happiness level effect on Production and Culture increased (1=20%, 2=40%)
+
+- Ice Ages now increase Risk From Exposure more (+0.2 --> +0.4) in Cold Climates, and no longer decrease it in Warm Climates, vice versa for Heat Waves
+- Ice Ages and Heat Waves no longer affect Food Huntable (from clusters), only Food Forageable (from foodweb)
+- Ice Ages and Heat Waves now both lower Food per Production from Farming
+
+- Clan Influence bonus per band led increased to +7 from +5
+- Post-hunt clan dispute events now slightly more rare
+
+
+Programming
+
+- Improved AI military development, consistency, and unit composition
+- AI will not attack if their fighters are below a certain number
+- Lowered fertility handicap for AI
+
+UI
+
+- Tile tooltips now more compact by not listing all climate/feature/state effects (that info is still available via nested tooltips)
+- Combined Band-level notifications into 1 Tribe-level summary notification for each notification type
+- Population breakdown by age group now shown on Band Population tooltip
+
+Bugs Fixed
+
+- Fixed various Chief traits only getting aplied to their assigned Band instead of all Bands
+- Fixed modifier conditions not getting checked correctly for Tribe, Tribe Relationship, Clan, and Clan Relationship attributes
+- Fixed Band XP for foraging, domestication, and climate not getting copied to offshoot band when splitting 
+- Fixed Band XP for climate not accumulating when staying on one tile
+- Fixed bug where foraging/domestication point assignment buttons remained active after switching production away from Foraging/Domestication
+- Fixed sorting of specialist candidates by role-specific strengths
+- Fixed crash when saving with a file name that is too long, now has a character limit
+- Fixed brash when quickly clicking on the 'Forage' status button when foraging is automated
