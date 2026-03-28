@@ -35,7 +35,6 @@ Maximum 1 of these per turn will trigger an Event instead of a Pressured state, 
 - Clan Influence bonus per band led increased to +7 from +5
 - Post-hunt clan dispute events now slightly more rare
 
-
 Programming
 
 - Improved AI military development, consistency, and unit composition
@@ -57,4 +56,4 @@ Bugs Fixed
 - Fixed bug where foraging/domestication point assignment buttons remained active after switching production away from Foraging/Domestication
 - Fixed sorting of specialist candidates by role-specific strengths
 - Fixed crash when saving with a file name that is too long, now has a character limit
-- Fixed brash when quickly clicking on the 'Forage' status button when foraging is automated
+- Fixed crash when quickly clicking on the 'Forage' status button when foraging is automated
