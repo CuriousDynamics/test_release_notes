@@ -9,11 +9,11 @@ This allows extensive specialization in different Climates.
 - Food Forageable maluses from Foodweb Stability, Ice Age, and Heat Wave are now second-order modifiers, applied together with species local population size modifier. 
 This increases the impact of foodweb stability and climate change and makes Food yields from Foraging more volatile.
 
-- Removed dynamic scarcity modifier of Trade Value, so value of Resources now remains static during a trade.
-- Rebalanced Trade Value of Food so it becomes cheaper with every Food-boosting tech, becoming very cheap by the end of the demo.
+- Removed dynamic scarcity modifier of Trade Value, so value of Resources now remains static during a trade
+- Rebalanced Trade Value of Food so it becomes cheaper with every Food-boosting tech, becoming very cheap by the end of the demo
 - Ice Age and Heat Wave now increase the Trade Value of Food
-- Doubled Trade Value of Items so they are even more expensive relative to Food and other Resources. 
-- Traders Clan bonus to Happiness from Trade Cooldown now only triggers when a Band has traded with another Tribe that turn. Internal trade no longer triggers it.
+- Doubled Trade Value of Items so they are even more expensive relative to Food and other Resources
+- Traders Clan bonus to Happiness from Trade Cooldown now only triggers when a Band has traded with another Tribe that turn. Internal trade no longer triggers it
 - Restricted initiation of trade deals to only be possible if Tribe Opinion is minimum -10
 
 - Exploration norm now gives +1 Band Science to all Bands, instead of +20% Tribe Science
@@ -32,7 +32,7 @@ This increases the impact of foodweb stability and climate change and makes Food
 Programming
 
 - Reworked AI decision-making to use a more sophisticated and extensible system of prioritization
-- Used new AI prioritization to improve AI choices around production and movement (which should also mean less frequent cornering of the player). More such improvements in upcoming updates.
+- Used new AI prioritization to improve AI choices around production and movement (which should also mean less frequent cornering of the player). More such improvements in upcoming updates
 - Reworked AI logic regarding territory
 - Improved AI choice of person to assign to specialist roles
 - Enabled AI to handle events and enabled certain event types for AI tribes
@@ -43,8 +43,8 @@ UI
 - Visibility of terrain and climate-dependent modifiers to Attack Strength and Morale now depends on whether military is viewed in context of a specific battle or outside battle
 - Clamped Fertility value to minimum 0 so it cannot become negative
 - Renamed "Role Specific Strengths" column to "Relevant Traits" in Specialist assignment view
-- Tribe tooltips no longer show which technologies a Tribe has, only the total number of technologies they've mastered.
-- Tribe tooltips now show Climate XP for each climate.
+- Tribe tooltips no longer show which technologies a Tribe has, only the total number of technologies they've mastered
+- Tribe tooltips now show Climate XP for each climate
 
 Bugs Fixed
 
