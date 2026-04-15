@@ -37,11 +37,11 @@ Programming
 - Improved AI choice of person to assign to specialist roles
 - Enabled AI to handle events and enabled certain event types for AI tribes
 - AI bands will not trade away Food below a certain limit, to avoid a Food Deficit
+- Clamped Fertility value to minimum 0 so it cannot become negative
 
 UI
 
 - Visibility of terrain and climate-dependent modifiers to Attack Strength and Morale now depends on whether military is viewed in context of a specific battle or outside battle
-- Clamped Fertility value to minimum 0 so it cannot become negative
 - Renamed "Role Specific Strengths" column to "Relevant Traits" in Specialist assignment view
 - Tribe tooltips no longer show which technologies a Tribe has, only the total number of technologies they've mastered
 - Tribe tooltips now show Climate XP for each climate
