@@ -1,0 +1,56 @@
+Test Branch 0.2.8-test 2026-04-16
+
+Design
+
+- Removed Band-level Climate XP, added Tribe-level Climate XP. Each turn, if a Tribe has a Band in a Climate, the Tribe gains 1 XP for that Climate
+- Added 'Climate Adaptations' as Tribe states obtained via events which trigger when a Tribe's Climate XP reaches certain levels. 
+This allows extensive specialization in different Climates.
+
+- Food Forageable maluses from Foodweb Stability, Ice Age, and Heat Wave are now second-order modifiers, applied together with species local population size modifier. 
+This increases the impact of foodweb stability and climate change and makes Food yields from Foraging more volatile.
+
+- Removed dynamic scarcity modifier of Trade Value, so value of Resources now remains static during a trade.
+- Rebalanced Trade Value of Food so it becomes cheaper with every Food-boosting tech, becoming very cheap by the end of the demo.
+- Ice Age and Heat Wave now increase the Trade Value of Food
+- Doubled Trade Value of Items so they are even more expensive relative to Food and other Resources. 
+- Traders Clan bonus to Happiness from Trade Cooldown now only triggers when a Band has traded with another Tribe that turn. Internal trade no longer triggers it.
+- Restricted initiation of trade deals to only be possible if Tribe Opinion is minimum -10
+
+- Exploration norm now gives +1 Band Science to all Bands, instead of +20% Tribe Science
+- Tradition norm now gives +20% Tribe Culture, instead of +2 Band Culture to all Bands
+
+- Training production focus increased to use baseline +0.25 Training Points per Production, instead of +0.2
+- Hunters Clan bonus to Training Points is no longer a flat +0.5 Training Points/turn, but +0.25 Training Points per Production while Training 
+- Diligence norm bonus is no longer a flat +1 Training Points/turn, but +0.25 Training Points per Production while Training 
+
+- Warriors Clan bonus to Attack strength increased to +1 from +0.5
+- Rebalanced domestication XP upgrade event outcomes to offer bigger Food bonus and smaller Production bonus
+- Decreased production cost of non-wonder structures to 10 from 15
+- Decreased bonus to Risk from Exposure from foraging Wild Sheep to -20% from -30%
+- Increased bonus to Risk from Exposure from domesticated Sheep to -40% from -30%
+
+Programming
+
+- Reworked AI decision-making to use a more sophisticated and extensible system of prioritization
+- Used new AI prioritization to improve AI choices around production and movement (which should also mean less frequent cornering of the player). More such improvements in upcoming updates.
+- Reworked AI logic regarding territory
+- Improved AI choice of person to assign to specialist roles
+- Enabled AI to handle events and enabled certain event types for AI tribes
+- AI bands will not trade away Food below a certain limit, to avoid a Food Deficit
+
+UI
+
+- Visibility of terrain and climate-dependent modifiers to Attack Strength and Morale now depends on whether military is viewed in context of a specific battle or outside battle
+- Clamped Fertility value to minimum 0 so it cannot become negative
+- Renamed "Role Specific Strengths" column to "Relevant Traits" in Specialist assignment view
+- Tribe tooltips no longer show which technologies a Tribe has, only the total number of technologies they've mastered.
+- Tribe tooltips now show Climate XP for each climate.
+
+Bugs Fixed
+
+- Fixed bug where Raid events would sometimes give Items that were not yet unlocked technologically
+- Fixed missing acknowledgements when discovering new Spiritual Sites or meeting new Tribes via increased vision range or from a Watchtower bonus
+
+Known Issues
+
+- Occasionally prey cluster 'hunt' action isn't available when it should be (its button remains grayed out). Haven't been able to recreate the issue, please reach out if you encounter it
