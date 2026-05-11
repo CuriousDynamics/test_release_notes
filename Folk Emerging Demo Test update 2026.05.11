@@ -47,7 +47,7 @@ Programming
 UI
 
 - Every attribute tooltip now has a "Potential Modifiers" hyperlink that shows a nested tooltip with a list of everything in the game that can modify that attribute
-- Effects of late-game techs that are locked in the demo are now visible in the tech tree and in Potential Modifiers lists (exact details subject to change)
+- Most effects of late-game techs that are locked in the demo are now visible in the tech tree and in Potential Modifiers lists (details subject to change, some effects not included)
 - Hyperlinked text now uses non-breaking spaces so icons and linked text doesn't break across lines
 - Climate tooltips now include info about chance of Storms and chance of Wildfires
 - Fixed delayed status button update when selecting Foraging as production focus and band has automated foraging enabled and multiple foraging points
