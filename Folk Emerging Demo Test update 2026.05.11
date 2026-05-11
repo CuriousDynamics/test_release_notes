@@ -8,13 +8,15 @@ Design
 - Heat Waves now have less harsh baseline conditions but more unpredictable weather phenomena
 - Ice Ages now have more harsh baseline conditions but less unpredictable weather phenomena
 
-- Expanded and reworked tech tree, including new techs like Hideworking, Cordage, Administration, Mounted Warfare, as well as end-game Trade/State/Military Legacy techs (repeatable and grant Victory Points)
-- Urban Dwellings moved back to Urbanization tech, no longer buildable in the demo
-- Rafts tech now obtainable in the demo
+- Expanded and reworked tech tree, including new early/mid-game techs (e.g. Hideworking, Hafting, Cordage), and late-game techs (e.g. Agrarian Engineering, Administration, Mounted Warfare)
+- Tech tree now ends with Trade Legacy, State Legacy, and Military Legacy, which are repeatable and grant Victory Points each time they are completed
+- Urban Dwellings moved back to Urbanization tech, and are no longer buildable in the demo
+- Rafts tech is now obtainable in the demo
 - Enabled traversing water tiles to any visible coastal land tile, unlocked with Rafts tech
 - Enabled sending scouting missions to water tiles, unlocked with Rafts tech
 
 - Combat units now also cost resources to recruit
+- Added Spears unit, unlocked with Hafting tech
 - Camp Amenities now also cost resources to recruit
 - Camp Amenities production cost is significantly lowered
 - Camp Amenities from original band now copy over into new band when splitting
@@ -58,6 +60,7 @@ Bugs Fixed
 
 Known Issues
 
+- Autobattler units' attack & morale tooltips only show if first hovering on main unit object
 - Sometimes acknowledgements (e.g. Under Attack) between turns show up empty
 - Sometimes number of assignable fighters shows a negative number in the numerator
-- Occasionally prey cluster 'hunt' action isn't available when it should be (its button remains grayed out). Haven't been able to recreate the issue, please reach out if you encounter it
+- Sometimes prey cluster 'hunt' action isn't available when it should be (its button remains grayed out). Haven't been able to recreate the issue, please reach out if you encounter it
