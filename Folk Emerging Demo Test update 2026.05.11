@@ -16,7 +16,11 @@ Design
 - Enabled sending scouting missions to water tiles, unlocked with Rafts tech
 
 - Combat units now also cost resources to recruit
-- Added Spears unit, unlocked with Hafting tech
+- Added Spears unit (special ability: does pierce damage to enemy behind target), unlocked with Hafting tech
+- Moved Axes unit to unlock with Hafting tech
+- Moved Shields unit to unlock with Hideworking tech
+- Hunters and Warriors clan bonuses are now swapped: Hunters get +0.5 Training Points/turn, Warriors get +0.25 Training Points per Production while Training
+
 - Camp Amenities now also cost resources to recruit
 - Camp Amenities production cost is significantly lowered
 - Camp Amenities from original band now copy over into new band when splitting
@@ -33,8 +37,6 @@ Design
 
 - Camels now provide +2 Moves/turn in Desert after Animal Husbandry tech is unlocked
 - Horses now provide +2 Moves/turn outside Desert after Horseback Riding tech is unlocked
-
-- Hunters and Warriors clan bonuses are now swapped: Hunters get +0.5 Training Points/turn, Warriors get +0.25 Training Points per Production while Training
 
 Programming
 
@@ -53,7 +55,7 @@ UI
 
 Bugs Fixed
 
-- Fixed several rare but critical bugs due to multi-threading. The fix may decrease performance in some cases, please report this if so
+- Fixed several rare but critical bugs due to multi-threading. The fix may decrease performance in some situations (e.g. band movement), please report this if so
 - Fixed unit summary tooltip on hover throwing error during battle
 - Fixed equippable item dropdown in Structure panel crashing when clicked
 - Fixed claimed structure icon not updating until following turn
