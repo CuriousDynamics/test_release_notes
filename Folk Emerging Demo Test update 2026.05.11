@@ -2,20 +2,62 @@ Test Branch 0.2.9-test 2026-05-11
 
 Design
 
-- 
+- Added new weather phenomena and tile states: Wildfires, Burned, Floods, Fertile Soil
+- Added river flooding
+- Reworked Climate changes to now have ramp-up and wind-down periods, and with more unpredictable timing
+- Heat Waves now have less harsh baseline conditions but more unpredictable weather phenomena
+- Ice Ages now have more harsh baseline conditions but less unpredictable weather phenomena
+
+- Expanded and reworked tech tree, including new techs like Hideworking, Cordage, Administration, Mounted Warfare, as well as end-game Trade/State/Military Legacy techs (repeatable and grant Victory Points)
+- Urban Dwellings moved back to Urbanization tech, no longer buildable in the demo
+- Rafts tech now obtainable in the demo
+- Enabled traversing water tiles to any visible coastal land tile, unlocked with Rafts tech
+- Enabled sending scouting missions to water tiles, unlocked with Rafts tech
+
+- Combat units now also cost resources to recruit
+- Camp Amenities now also cost resources to recruit
+- Camp Amenities production cost is significantly lowered
+- Camp Amenities from original band now copy over into new band when splitting
+
+- Reworked Risk from Exposure to now only trigger events related to generally hot/cold/wet/dry conditions, not natural disasters
+- Disaster events now trigger only when a Band is starting its turn on a tile with certain weather phenomena, e.g. Wildfires, Floods
+- Increased baseline Risk from Exposure, and added more unlockable bonuses that decrease it (e.g. from the new Hideworking tech, or the recently added Climate Adaptations)
+
+- Increased baseline Food waste rate/turn
+- Smoke Racks now decrease Food waste rate/turn and increase Food from hunting Marine Clusters
+
+- Limited Scavenging action to once per cluster per player per turn
+- Added Marine Cluster features in the sea, which can be hunted similar to migratory clusters on land, unlocked with Bone & Wood Tools tech
+
+- Camels now provide +2 Moves/turn in Desert after Animal Husbandry tech is unlocked
+- Horses now provide +2 Moves/turn outside Desert after Horseback Riding tech is unlocked
+
+- Hunters and Warriors clan bonuses are now swapped: Hunters get +0.5 Training Points/turn, Warriors get +0.25 Training Points per Production while Training
 
 Programming
 
-- 
+- Optimized map generation algorithms
+- Optimized map search algorithms
+- Added separate band attribute for waste rate for each resource
 
 UI
 
-- 
+- Every attribute tooltip now has a "Potential Modifiers" hyperlink that shows a nested tooltip with a list of everything in the game that can modify that attribute
+- Fixed delayed status button update when selecting Foraging as production focus and band has automated foraging enabled and multiple foraging points
+- Effects of late-game techs that are locked in the demo are now visible in the tech tree and in Potential Modifiers lists (exact details subject to change)
+- Hyperlinked text now uses non-breaking spaces so icons and linked text doesn't break across lines
+- Climate tooltips now include info about chance of Storms and chance of Wildfires
+- Various other UI tweaks & improvements
 
 Bugs Fixed
 
-- 
+- Fixed several rare but critical bugs due to multi-threading
+- Fixed unit summary tooltip on hover throwing error during battle
+- Fixed equippable item dropdown in Structure panel crashing when clicked
+- Fixed claimed structure icon not updating until following turn
 
 Known Issues
 
+- Sometimes acknowledgements (e.g. Under Attack) between turns show up empty
+- Sometimes number of assignable fighters shows a negative number in the numerator
 - Occasionally prey cluster 'hunt' action isn't available when it should be (its button remains grayed out). Haven't been able to recreate the issue, please reach out if you encounter it
