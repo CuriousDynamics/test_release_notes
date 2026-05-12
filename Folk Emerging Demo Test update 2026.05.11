@@ -4,7 +4,7 @@ Design
 
 - Added new weather phenomena and tile states: Wildfires, Burned, Floods, Fertile Soil
 - Added river flooding
-- Reworked Climate changes to now have ramp-up and wind-down periods, and with more unpredictable timing
+- Reworked world climate changes to now have ramp-up and wind-down periods, and with more unpredictable timing
 - Heat Waves now have less harsh baseline conditions but more disruptive weather phenomena
 - Ice Ages now have more harsh baseline conditions but fewer disruptive weather phenomena
 
