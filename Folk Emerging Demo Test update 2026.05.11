@@ -4,19 +4,17 @@ Design
 
 - Added new weather phenomena and tile states: Wildfires, Burned, Floods, Fertile Soil
 - Added river flooding
-- Reworked world climate changes to now have ramp-up and wind-down periods, and with more unpredictable timing
+- Reworked world climate changes to now have ramp-up and wind-down periods, and with less predictable timing
 - Heat Waves now have less harsh baseline conditions but more disruptive weather phenomena
-- Ice Ages now have more harsh baseline conditions but fewer disruptive weather phenomena
+- Ice Ages now have harsher baseline conditions but fewer disruptive weather phenomena
 
-- Expanded and reworked tech tree, including new early/mid-game techs (e.g. Hideworking, Hafting, Cordage), and late-game techs (e.g. Agrarian Engineering, Administration, Mounted Warfare)
+- Expanded and reworked tech tree, including new early/mid-game techs (e.g. Hideworking, Hafting, Cordage), and new late-game techs (e.g. Agrarian Engineering, Administration, Mounted Warfare)
 - Tech tree now ends with Trade Legacy, State Legacy, and Military Legacy, which are repeatable and grant Victory Points each time they are completed
-- Urban Dwellings moved back to Urbanization tech, and are no longer buildable in the demo
-- Rafts tech is now obtainable in the demo
-- Enabled traversing water tiles to any visible coastal land tile, unlocked with Rafts tech
-- Enabled sending scouting missions to water tiles, unlocked with Rafts tech
+- Urban Dwellings are moved out of Stoneworking tech back to Urbanization tech, and are no longer buildable in the demo
+- Rafts tech is now obtainable in the demo, which enables traversing water tiles to any visible coastal land tile, and enables sending scouting missions to water tiles
 
 - Combat units now also cost resources to recruit
-- Added Spears unit (special ability: does pierce damage to enemy behind target), unlocked with Hafting tech
+- Added Spears unit, whose special ability is doing pierce damage to enemy behind its target, unlocked with Hafting tech
 - Moved Axes unit to unlock with Hafting tech
 - Moved Shields unit to unlock with Hideworking tech
 - Hunters and Warriors clan bonuses are now swapped: Hunters get +0.5 Training Points/turn, Warriors get +0.25 Training Points per Production while Training
@@ -27,7 +25,7 @@ Design
 
 - Reworked Risk from Exposure to now only trigger events related to generally hot/cold/wet/dry conditions, not natural disasters
 - Disaster events now trigger only when a Band is starting its turn on a tile with certain weather phenomena, e.g. Wildfires, Floods
-- Increased baseline Risk from Exposure, and added more unlockable bonuses that decrease it (e.g. from the new Hideworking tech)
+- Increased baseline Risk from Exposure, and added more unlockable bonuses that decrease it (e.g. Hideworking tech)
 
 - Limited Scavenging action to once per cluster per player per turn
 - Added Marine Cluster features in the sea, which can be hunted similar to migratory clusters on land, unlocked with Bone & Wood Tools tech
@@ -56,7 +54,7 @@ UI
 
 Bugs Fixed
 
-- Fixed several rare but critical bugs due to multi-threading. The fix may decrease performance in some situations (e.g. during band movement), please report this if so
+- Fixed several rare but critical bugs due to multi-threading. The fix may decrease performance in some situations (e.g. during band movement), please report this if noticeable
 - Fixed unit summary tooltip on hover throwing error during battle
 - Fixed equippable item dropdown in Structure panel crashing when clicked
 - Fixed claimed structure icon not showing claim until following turn
