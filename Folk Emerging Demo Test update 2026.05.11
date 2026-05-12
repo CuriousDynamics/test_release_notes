@@ -13,7 +13,7 @@ Design
 - Urban Dwellings are moved out of Stoneworking tech back to Urbanization tech, and are no longer buildable in the demo
 - Rafts tech is now obtainable in the demo, which enables traversing water tiles to any visible coastal land tile, and enables sending scouting missions to water tiles
 
-- Combat units now also cost resources to recruit
+- Combat units now also cost resources to recruit, and their Training Points cost varies
 - Added Spears unit, whose special ability is doing pierce damage to enemy behind its target, unlocked with Hafting tech
 - Moved Axes unit to unlock with Hafting tech
 - Moved Shields unit to unlock with Hideworking tech
