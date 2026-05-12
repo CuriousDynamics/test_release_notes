@@ -27,13 +27,14 @@ Design
 
 - Reworked Risk from Exposure to now only trigger events related to generally hot/cold/wet/dry conditions, not natural disasters
 - Disaster events now trigger only when a Band is starting its turn on a tile with certain weather phenomena, e.g. Wildfires, Floods
-- Increased baseline Risk from Exposure, and added more unlockable bonuses that decrease it (e.g. from the new Hideworking tech, or the recently added Climate Adaptations)
-
-- Increased baseline Food waste rate/turn
-- Smoke Racks now decrease Food waste rate/turn and increase Food from hunting Marine Clusters
+- Increased baseline Risk from Exposure, and added more unlockable bonuses that decrease it (e.g. from the new Hideworking tech)
 
 - Limited Scavenging action to once per cluster per player per turn
 - Added Marine Cluster features in the sea, which can be hunted similar to migratory clusters on land, unlocked with Bone & Wood Tools tech
+
+- Increased baseline Food waste rate/turn
+- Smoke Racks now decrease Food waste rate/turn and increase Food from hunting Marine Clusters
+- Added Baskets camp amenity that increases Food carrying capacity and decreases Food waste rate/turn, unlocked with Cordage tech
 
 - Camels now provide +2 Moves/turn in Desert after Animal Husbandry tech is unlocked
 - Horses now provide +2 Moves/turn outside Desert after Horseback Riding tech is unlocked
