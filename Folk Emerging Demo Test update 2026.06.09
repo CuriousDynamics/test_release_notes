@@ -2,15 +2,36 @@ Test Branch 0.2.9-test 2026-06-09
 
 Design
 
-- 
+- Trade Value is doubled for the last item of each type
+- Studying Nature production focus is now unique to the Sages Clan
+- Watchtower now gives Attack Strength instead of Morale, and no longer only when defending
+
+- Some of the visible changes related to full game content (lots more behind the scenes):
+  - Added various late-game military units
+  - Proto-Vedic and Proto-Slavic civs are replaced with Proto-Indic and Proto-Kurgan
+  - Fortifications tile improvement added
+
+- Pastoralism playstyle rework:
+  - Herding is no longer a production focus
+  - Pastures no longer equip Livestock items
+  - The passive Food/turn from Livestock items now gets aggregated into a Food From Livestock modifier
+  - Pastoralism norm and Herder trait now boost Food From Livestock
+  - Pastures now boost Food From Livestock for adjacent Bands
+  - Pastures are now much cheaper to construct
+  - Livestock items now reduce Production by -0.1 each (stackable)
 
 Programming
 
-- 
+- Enabled units special abilities to target themselves
+- Refactor of production & construction code
 
 UI
 
-- 
+- Made interactions with UI juicier in a variety of ways
+- Added unit categories: infantry, mounted, melee, ranged
+- Moved tooltip for 'Run Trials' button to be in the bottom-right of the screen so it doesn't block units in Proving Grounds
+- Top-left tribe icon tooltip now also directly shows player's tribe summary
+- 'Completed Wonder' acknowledgement added when player completes wonder
 
 Bugs Fixed
 
