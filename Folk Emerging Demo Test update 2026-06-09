@@ -1,0 +1,24 @@
+Test Branch 0.2.9-test 2026-05-11
+
+Design
+
+- 
+
+Programming
+
+- 
+
+UI
+
+- 
+
+Bugs Fixed
+
+- 
+
+Known Issues
+
+- Sometimes acknowledgements (e.g. Under Attack) between turns show up empty
+- Sometimes number of assignable fighters shows a negative number in the numerator
+- Sometimes prey cluster 'hunt' action isn't available when it should be (its button remains grayed out). Haven't been able to recreate the issue, please reach out if you encounter it
+- Autobattler units' attack & morale tooltips only show after first hovering on main unit object, otherwise full unit tooltip shows instead
