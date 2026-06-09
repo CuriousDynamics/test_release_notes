@@ -2,20 +2,19 @@ Test Branch 0.2.9-test 2026-06-09
 
 Design
 
+- Species in ecoregions uninhabited by Bands now slowly gravitate towards approximately equilibrium populations
+- Resource costs for all structures and tile improvements is now halved
+- Spiritual Site Devotee bonus now also gives +10 Victory Points
 - Trade Value is doubled for the last item of each type
+- Excess Science/turn now overflows to next turn when completing a tech
+- Cordage now unlocks a Nets amenity, which gives passive Food from adjacent rivers and coast
+- Norm switching is now enabled, at 3x the norm's normal cost
+- Some Cultural Norms now give extra Influence to certain Clan types
 - Studying Nature production focus is now unique to the Sages Clan
 - Watchtower now gives Attack Strength instead of Morale, and no longer only when defending
-- Some Cultural Norms now give extra Reputation to certain Clan types
-- Excess Science now overflows to next turn when completing a tech
-- Spiritual Site Devotee bonus now also gives +10 Victory Points
-- Medicine Rituals and Festivals both now also give -50% Training/turn
+- Festivals (renamed from Fire Rituals) and Medicine Rituals both now also give -50% Training/turn
 - Artists Clan no longer gets passive +20% Culture/turn, instead gets +50% Culture/turn while producing Festivals
 - Honoring Chief production norm removed, instead Festivals now give +1 Reputation to Chief for 10 turns each time they're completed
-
-- Added difficulty settings:
-  - Easier: 100 starting Happiness, +5 Happiness/turn, lower risks, slower development and less aggression for non-player factions
-  - Standard: 50 starting Happiness, standard development and aggression for non-player factions
-  - Harder: 0 starting Happiness, -5 Happiness/turn, faster development and more aggression for non-player factions
 
 - Food and Fertility rework:
   - Added Band states based on current level of Food availability: Minimal/Adequate/Comfortable/Abundant Food Stockpile
@@ -34,22 +33,36 @@ Design
   - Pastures are now much cheaper to construct
   - Livestock items now reduce Production by -0.1 each (stackable)
 
+- Added difficulty settings:
+  - Easier: 100 starting Happiness, +5 Happiness/turn, lower risks, slower development and less aggression for non-player factions
+  - Standard: 50 starting Happiness, standard development and aggression for non-player factions
+  - Harder: 0 starting Happiness, -5 Happiness/turn, faster development and more aggression for non-player factions
+
+- Added game speed settings:
+  - Faster: -50% cost of techs and norms
+  - Standard: normal cost of techs and norms
+  - Slower: +50% cost of techs and norms
+
 - Some visible changes related to full game content (lots more behind the scenes):
   - Added various late-game military units
   - Proto-Vedic and Proto-Slavic civs are replaced with Proto-Indic and Proto-Kurgan
   - Fortifications tile improvement added
   - Last tier of cultural norms now replaced with Taxation vs Redistribution, Law vs Shame, and Matrilinality vs Patrilineality
+  - Nets tech renamed to Intensive Fishing and unlocks a new Fishing Weir structure 
 
 Programming
 
 - Enabled units special abilities to target themselves
 - Refactor of production & construction progress and availability tracking
 - Added separate volume controls for ambience sound effects (e.g. nature sounds)
+- Enabled remappable controls (for now starting with a couple basic actions, expecting to add more)
+- Added setting for muting game audio when app is not in focus
 
 UI
 
 - Made UI interactions and updates juicier
 - Added unit categories: infantry, mounted, melee, ranged
+- When a unit doesn't have an item equipped, empty item slot is highlighted red
 - Moved tooltip for 'Run Trials' button to be in the bottom-right of the screen so it doesn't block units in Proving Grounds
 - Top-left tribe icon tooltip now also directly shows player's tribe summary
 - 'Completed Wonder' acknowledgement added when player completes wonder
@@ -58,16 +71,23 @@ UI
 - Movement Points renamed to Moves, Training Points renamed to Training
 - Training production focus renamed to Practicing
 - Fire Rituals renamed to Festivals
+- Person > Relationships > All sub-page is deactivated
+- Reworked and streamlined various tutorials
 - Various UI tweaks and improvements
 
 Bugs Fixed
 
 - Fixed various bugs related to construction projects progress & completion
 - Fixed first tech starting with some progress already made
+- Fixed some UI elements from specialist assignment panel showing up in specialist transfer panel
+- Fixed acknowledgements (e.g. Under Attack) between turns sometimes showing up empty
+- Fixed potential visual bugs due to staging/unstaging conflicts between movement, scouting, splitting, and construction
+- Fixed newly split offshoot Bands not being able to open Opportunities on the same turn they split
+- Fixed ESC key not closing diplomacy view
 
 Known Issues
 
-- Sometimes acknowledgements (e.g. Under Attack) between turns show up empty
 - Sometimes number of assignable fighters shows a negative number in the numerator
 - Sometimes prey cluster 'hunt' action isn't available when it should be (its button remains grayed out). Haven't been able to recreate the issue, please reach out if you encounter it
 - Autobattler units' attack & morale tooltips only show after first hovering on main unit object, otherwise full unit tooltip shows instead
+- Linux: game sometimes gets stuck during autosave (seems to be due to dual-boot setup with storing game files on external NTFS drive; works fine when files are moved to EXT4 drive)
