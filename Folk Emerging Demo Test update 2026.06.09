@@ -14,7 +14,7 @@ Design
 - Watchtower now gives Attack Strength instead of Morale, and no longer only when defending
 - Festivals (renamed from Fire Rituals) and Medicine Rituals both now also give -50% Training/turn
 - Artists Clan no longer gets passive +20% Culture/turn, instead gets +50% Culture/turn while producing Festivals
-- Honoring Chief production norm removed, instead Festivals now give +1 Reputation to Chief for 10 turns each time they're completed
+- Honoring Chief production focus removed, instead Festivals now give +1 Reputation to Chief for 10 turns each time they're completed
 
 - Food and Fertility rework:
   - Added Band states based on current level of Food availability: Minimal/Adequate/Comfortable/Abundant Food Stockpile
