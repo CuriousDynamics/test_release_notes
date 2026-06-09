@@ -85,10 +85,10 @@ Bugs Fixed
 - Fixed potential visual bugs due to staging/unstaging conflicts between movement, scouting, splitting, and construction
 - Fixed newly split offshoot Bands not being able to open Opportunities on the same turn they split
 - Fixed ESC key not closing diplomacy view
+- Fixed autobattler unit tooltip triggers
 
 Known Issues
 
 - Sometimes number of assignable fighters shows a negative number in the numerator
 - Sometimes prey cluster 'hunt' action isn't available when it should be (its button remains grayed out). Haven't been able to recreate the issue, please reach out if you encounter it
-- Autobattler units' attack & morale tooltips only show after first hovering on main unit object, otherwise full unit tooltip shows instead
 - Linux: game sometimes gets stuck during autosave (seems to be due to dual-boot setup with storing game files on external NTFS drive; works fine when files are moved to EXT4 drive)
