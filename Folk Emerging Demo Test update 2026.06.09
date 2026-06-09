@@ -8,6 +8,9 @@ Design
 - Some Cultural Norms now give extra Reputation to certain Clan types
 - Excess Science now overflows to next turn when completing a tech
 - Spiritual Site Devotee bonus now also gives +10 Victory Points
+- Medicine Rituals and Festivals both now also give -50% Training/turn
+- Artists Clan no longer gets passive +20% Culture/turn, instead gets +50% Culture/turn while producing Festivals
+- Honoring Chief production norm removed, instead Festivals now give +1 Reputation to Chief for 10 turns each time they're completed
 
 - Added difficulty settings:
   - Easier: 100 starting Happiness, +5 Happiness/turn, lower risks, slower development and less aggression for non-player factions
@@ -19,6 +22,8 @@ Design
   - Food availability states boost Fertility (+0/0.05/0.1/0.15) and Happiness/turn (+1/2/3/4)
   - Hedonism now gives +30% Fertility if Food Stockpile is Adequate (1x population) or higher, but also gives +0.2 Food Waste rate/turn and -20% Production
   - Reliable Freshwater no longer boosts Fertility, its Health/turn bonus is increased from +5 to +10, and it now lowers Risk of Disease by -25%
+  - Pressured by Wildlife/Exposure/Discontent band states now also give -30% Fertility
+  - Modesty norm now also gives -20% Fertility
 
 - Pastoralism playstyle rework:
   - Herding is no longer a production focus
@@ -39,16 +44,21 @@ Programming
 
 - Enabled units special abilities to target themselves
 - Refactor of production & construction progress and availability tracking
+- Added separate volume controls for ambience sound effects (e.g. nature sounds)
 
 UI
 
-- Made interactions with UI juicier in a variety of ways
+- Made UI interactions and updates juicier
 - Added unit categories: infantry, mounted, melee, ranged
 - Moved tooltip for 'Run Trials' button to be in the bottom-right of the screen so it doesn't block units in Proving Grounds
 - Top-left tribe icon tooltip now also directly shows player's tribe summary
 - 'Completed Wonder' acknowledgement added when player completes wonder
-- Various UI tweaks and improvements
 - Added some missing info to Potential Modifiers lists
+- Added cultural norm icons
+- Movement Points renamed to Moves, Training Points renamed to Training
+- Training production focus renamed to Practicing
+- Fire Rituals renamed to Festivals
+- Various UI tweaks and improvements
 
 Bugs Fixed
 
