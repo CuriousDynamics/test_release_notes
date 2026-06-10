@@ -24,13 +24,11 @@ Design
   - Pressured by Wildlife/Exposure/Discontent band states now also give -30% Fertility
   - Modesty norm now also gives -20% Fertility
 
-- Pastoralism playstyle rework:
-  - Herding is no longer a production focus
-  - Pastures no longer equip Livestock items
-  - The passive Food/turn from Livestock items now gets aggregated into a Food From Livestock modifier
+- Pastoralist playstyle rework:
+  - Herding production focus is removed
+  - The passive Food/turn from various Livestock items now gets aggregated into a Food From Livestock modifier of Food/turn
   - Pastoralism norm and Herder trait now boost Food From Livestock
-  - Pastures now boost Food From Livestock for adjacent Bands
-  - Pastures are now much cheaper to construct
+  - Pastures no longer equip Livestock items, instead they boost Food From Livestock for adjacent Bands, and are much cheaper to construct
   - Livestock items now reduce Production by -0.1 each (stackable)
 
 - Added difficulty settings:
