@@ -32,9 +32,9 @@ Design
   - Livestock items now reduce Production by -0.1 each (stackable)
 
 - Added difficulty settings:
-  - Easier: 100 starting Happiness, +5 Happiness/turn, lower risks, slower development and less aggression for non-player factions
-  - Standard: 50 starting Happiness, standard development and aggression for non-player factions
-  - Harder: 0 starting Happiness, -5 Happiness/turn, faster development and more aggression for non-player factions
+  - Easier: 100 starting Happiness, +5 Happiness/turn, lower risks, slower development & less aggression for non-player factions
+  - Standard: 50 starting Happiness, standard development & aggression for non-player factions
+  - Harder: 0 starting Happiness, -5 Happiness/turn, faster development & more aggression for non-player factions
 
 - Added game speed settings:
   - Faster: -50% cost of techs and norms
