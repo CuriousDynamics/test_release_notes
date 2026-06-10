@@ -19,8 +19,8 @@ Design
 - Food and Fertility rework:
   - Added Band states based on current level of Food availability: Minimal/Adequate/Comfortable/Abundant Food Stockpile
   - Food availability states boost Fertility (+0/0.05/0.1/0.15) and Happiness/turn (+1/2/3/4)
-  - Hedonism now gives +30% Fertility if Food Stockpile is Adequate (1x population) or higher, but also gives +0.2 Food Waste rate/turn and -20% Production
-  - Reliable Freshwater no longer boosts Fertility, its Health/turn bonus is increased from +5 to +10, and it now lowers Risk of Disease by -25%
+  - Hedonism norm now gives +30% Fertility if Food Stockpile is Adequate (1x population) or higher, but also gives +0.2 Food Waste rate/turn and -20% Production
+  - Reliable Freshwater no longer boosts Fertility, but its Health/turn bonus is increased from +5 to +10, and it now lowers Risk of Disease by -25%
   - Pressured by Wildlife/Exposure/Discontent band states now also give -30% Fertility
   - Modesty norm now also gives -20% Fertility
 
