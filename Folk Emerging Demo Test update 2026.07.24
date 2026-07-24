@@ -2,19 +2,30 @@ Test Branch 0.3.4-test 2026-07-24
 
 Design
 
+- Added more detailed agendas for non-player factions (e.g. based on clans, norms, etc) to make their diplomacy actions more consistent 
 - Non-player factions can now issue Requests for a specific item to be delivered within a certain number of turns. If fulfilled, it gives +10 Opinion and triggers a reward event.
-- Too Much Debt no longer impacts Happiness/turn, instead it now blocks issuing of requests and most diplomacy actions 
-- New relationship state, Trade Embargo, during which the 2 factions can't trade or issue requests. Triggered after each battle, lasting 5 turns.
+- New relationship state, Trade Embargo, during which the 2 factions can't trade or issue Requests. Triggered after each battle, lasting 5 turns.
+- Trade no longer has a minimum Opinion requirement
 - New relationship state, Non-Aggression Pact, during which the 2 factions can't attack each other. Triggered by 'Declare Friendship' and 'Declare Alliance' diplomacy actions.
-- New relationship state, Alliance:
+
+- Alliances:
+  - New relationship state, Alliance, Triggered by 'Declare Alliance' diplomacy action
   - Requires 20+ Opinion and both sides having less than 2 ongoing alliances
   - Comes with an unlimited Non-Aggression Pact and Right of Passage
-  - Triggers an alliance event with a powerful long-term bonus
-  - Triggered by 'Declare Alliance' diplomacy action
+  - Triggers an alliance event with a long-term bonus
   - Causes an Alliance Cooldown for 10 turns, during which the alliance can't be broken
   - Broken by new 'Break Alliance' diplomacy action, which applies a long-term Opinion malus
-- New tribe state, Coalition Leader, which requires being allied to 2 factions with fewer Victory Points, and gives +50% Culture/turn to the Coalition Leader
+  - Added Opinion malus for attacking another faction's allies
+  - New tribe state, Coalition Leader, which requires being allied to 2 factions with fewer Victory Points, and gives +50% Culture/turn to the Coalition Leader
+
 - Traders Clan now gives +0.5 Happiness per owned item type, decreased from +1
+
+- Too Much Debt no longer impacts Happiness/turn, instead it now blocks issuing of Requests and most diplomacy actions 
+- Debt tolerances at each opinion level are doubled (Angry: 5 -> 10, Upset: 25 -> 50, Cautious: 50 -> 100, Friendly:100 -> 200)
+- Improved the deals offered by non-player factions
+- 'Right of Passage' diplomacy action reworked into 'Temporary Passage' and only offers right of passage for 2 turns
+- Added Opinion malus based on number of Spiritual Sites in which both tribes have invested Worship Points
+
 
 Programming
 
@@ -24,10 +35,11 @@ UI
 
 - Improved structure and visuals of Diplomacy menu
 - Added separate menu showing all relationships between all factions
+- Improved faction relationship summary tooltips
 
 Bugs Fixed
 
-- 
+- Fixed issue where new diplomatic agreements sometimes didn't cancel existing intentions to attack or trade
 
 Known Issues
 
