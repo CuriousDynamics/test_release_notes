@@ -2,6 +2,7 @@ Test Branch 0.3.4-test 2026-07-24
 
 Design
 
+- Improved the trade deals offered by non-player factions
 - Added more detailed agendas for non-player factions (e.g. based on clans, norms, etc) to make their diplomacy actions more consistent 
 - Non-player factions can now issue Requests for a specific item to be delivered within a certain number of turns. If fulfilled, it gives +10 Opinion and triggers a reward event.
 - New relationship state, Trade Embargo, during which the 2 factions can't trade or issue Requests. Triggered after each battle, lasting 5 turns.
@@ -18,23 +19,16 @@ Design
   - Added Opinion malus for attacking another faction's allies
   - New tribe state, Coalition Leader, which requires being allied to 2 factions with fewer Victory Points, and gives +50% Culture/turn to the Coalition Leader
 
-- Traders Clan now gives +0.5 Happiness per owned item type, decreased from +1
-
 - Too Much Debt no longer impacts Happiness/turn, instead it now blocks issuing of Requests and most diplomacy actions 
 - Debt tolerances at each opinion level are doubled (Angry: 5 -> 10, Upset: 25 -> 50, Cautious: 50 -> 100, Friendly:100 -> 200)
-- Improved the deals offered by non-player factions
 - 'Right of Passage' diplomacy action reworked into 'Temporary Passage' and only offers right of passage for 2 turns
 - Added Opinion malus based on number of Spiritual Sites in which both tribes have invested Worship Points
-
-
-Programming
-
-- 
+- Traders Clan now gives +0.5 Happiness per owned item type, decreased from +1
 
 UI
 
 - Improved structure and visuals of Diplomacy menu
-- Added separate menu showing all relationships between all factions
+- Added separate menu showing all relationships between all factions (accessible via new button in top-right toolbar)
 - Improved faction relationship summary tooltips
 
 Bugs Fixed
@@ -44,5 +38,6 @@ Bugs Fixed
 Known Issues
 
 - Sometimes number of assignable fighters shows a negative number in the numerator
+- Sometimes an empty acknowledgement appears without text
 - Sometimes prey cluster 'hunt' action isn't available when it should be (its button remains grayed out). Haven't been able to recreate the issue, please reach out if you encounter it
 - Linux: game sometimes gets stuck during autosave (seems to be due to dual-boot setup with storing game files on external NTFS drive; works fine when files are moved to EXT4 drive)
