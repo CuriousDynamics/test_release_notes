@@ -25,6 +25,9 @@ Design
 - Added Opinion malus based on number of Spiritual Sites in which both tribes have invested Worship Points
 - Traders Clan now gives +0.5 Happiness per owned item type, decreased from +1
 
+- Band Culture/turn and Science/turn now have their baselines broken down into 0.1/adult (age 15+) and 0.05/child (age 5-14) instead of +0.1/person of any age. This makes high fertility take longer to pay off, and slows down overall pace of progression.
+- Higher risk outcome in hunting events now gives +30 Food, increased from +20
+
 UI
 
 - Improved structure and visuals of Diplomacy menu
