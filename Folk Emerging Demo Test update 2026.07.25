@@ -1,8 +1,8 @@
-Test Branch 0.3.4-test 2026-07-24
+Test Branch 0.3.4-test 2026-07-25
 
 Design
 
-- Improved the trade deals offered by non-player factions
+- Improved trade deals offered by non-player factions
 - Added more detailed agendas for non-player factions (e.g. based on clans, norms, etc) to make their diplomacy actions more consistent 
 - Non-player factions can now issue Requests for a specific item to be delivered within a certain number of turns. If fulfilled, it gives +10 Opinion and triggers a reward event.
 - New relationship state, Trade Embargo, during which the 2 factions can't trade or issue Requests. Triggered after each battle, lasting 5 turns.
@@ -26,7 +26,7 @@ Design
 - Traders Clan now gives +0.5 Happiness per owned item type, decreased from +1
 
 - Band Culture/turn and Science/turn now have their baselines broken down into 0.1/adult (age 15+) and 0.05/child (age 5-14) instead of +0.1/person of any age. This makes high fertility take longer to pay off, and slows down overall pace of progression.
-- Higher risk outcome in hunting events now gives +30 Food, increased from +20
+- Higher risk outcomes in hunting events now give +30 Food, increased from +20
 
 UI
 
