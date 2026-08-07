@@ -1,0 +1,79 @@
+Test Branch 0.3.5-test 2026-08-07
+
+Design
+
+- Reinforcements:
+  - Bands preparing for battle can now pull reinforcements from adjacent bands, to increase total available fighters that can be assigned to units. This makes smaller bands less vulnerable if clustered together.
+  - When using reinforcements for an attack, reinforcing bands also go on Attack Cooldown.
+
+- Glory:
+  - Total damage dealt to enemies during battle is tracked and displayed, and it accumulates as tribe-level Glory
+  - Every 100 Glory triggers a beneficial event with tribe-wide bonuses, making a militaristic focus more rewarding long-term
+  - Unit size no longer impacts Attack Strength, only Morale. This increases the impact of technology and other Attack bonuses, and means larger units survive longer but without doing more damage.
+
+- Injuries:
+  - Total damage taken during battle is tracked and displayed
+  - Injuries no longer work via a probability roll with every unit hit. Instead, total damage taken gets multiplied by Risk of Injuries from Battle to calculate number of injuries. This makes injuries more aligned with battle performance and outcome.
+  - Risk of Injuries from Battle is now baseline 0.1
+  - Warmaster's Curiosity now modifies Risk of Injuries from Battle by -10% for each +1 Curiosity
+
+- Battle Objectives:
+  - Attacker bands can now choose 1 of several battle objectives, with different mid-battle effects and victory outcomes:
+    - Repel: 
+      - if attackers win, they push away target band
+    - Loot: 
+      - if attackers win, they steal a resource (via event)
+    - Plunder: 
+      - if attackers win, they steal an item (via event)
+    - Capture: 
+      - if attackers win, they take captive a non-fighter (via event)
+      - if attackers win, they push away target band 
+      - +0.2 Risk of Injuries during this battle
+      - -5 Opinion from target for 10 turns
+      - -5 Opinion from target's friends for 5 turns
+    - Destroy: 
+      - if attackers win with x4 more fighters than target, they fully conquer the target band
+      - else if attackers win, they kill an important character (via event) and push away target band
+      - +0.4 Risk of Injuries during this battle
+      - -10 Opinion from target for 10 turns
+      - -10 Opinion from target's friends for 5 turns
+  - When fighting over structures only the 'Conquer Site' objective is available
+  - Factions agendas (e.g. diplomatic, militaristic) affect which battle objectives they choose
+  - As before, player still conquers target band if it has 0 fighters, no matter the battle objective
+  - If player is defeated in battle, attacker faction gets their own victory event, and player gets a response event
+
+- Opinion malus from attacking now gives a base -5 Opinion for 10 turns from the target, and -5 Opinion for 10 turns from the target's allies
+- Players can now back out of battles they have initiated and begun staging, it's only locked in once the "Start Battle" button is pressed
+  
+- "Invite to Feast" diplomacy action now costs 30 Food, up from 20
+
+- Added new tile improvement, Cave Paintings:
+  - unlocked with Controlled Fire
+  - buildable on tiles with Caves
+  - gives +1 Victory Point to faction that completes it
+  - gives +0.5 Culture/turn to band on tile and +0.5 extra if Band has Pigment Items (e.g. Ochre, Malachite)
+
+UI
+
+- Events with probabilistic outcomes now also trigger a full pop-up acknowledgement describing what happened, not just a notification
+- Added explicit mention in Chief's effects of existing mechanic: +1 Reputation per won battle, -1 Reputation per lost battle
+- Improved layout of military and battle menus
+- New battle details text with detailed tooltip added to military, battle, and battle outcome menus
+- Added small animation when running trials to increase clarity of new units appearing
+- Unit summaries now shown in unit button tooltips in Band > Military page
+- Enabled tribe relationship summaries to be accessible via event outcome tooltips
+- Moved person band info to main Person panel so it's more easily accessible
+- 'ESC' key now also resumes game when in-game menu is already open
+- Enkidu added to tutorial screen :)
+
+Bugs Fixed
+
+- Fixed tradeable button sometimes looking interactable when they are not
+- Fixed norm-dependent Reputation modifiers not updating when a person is taken captive by a tribe with different norms
+
+Known Issues
+
+- Sometimes number of assignable fighters shows a negative number in the numerator
+- Sometimes an empty acknowledgement appears without text
+- Sometimes prey cluster 'hunt' action isn't available when it should be (its button remains grayed out). Haven't been able to recreate the issue, please reach out if you encounter it
+- Linux: game sometimes gets stuck during autosave (seems to be due to dual-boot setup with storing game files on external NTFS drive; works fine when files are moved to EXT4 drive)
