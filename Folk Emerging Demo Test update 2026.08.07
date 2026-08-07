@@ -44,6 +44,7 @@ Design
 
 - Opinion malus from attacking now gives a base -5 Opinion for 10 turns from the target, and -5 Opinion for 10 turns from the target's allies
 - Players can now back out of battles they have initiated and begun staging, it's only locked in once the "Start Battle" button is pressed
+- "Family Member Taken Captive" person state now lowers Charisma by -1
   
 - "Invite to Feast" diplomacy action now costs 30 Food, up from 20
 - Standing Guard production focus now gives -20% Risk from Wildlife per 1 Production, boosted from -5% per 1 Production
