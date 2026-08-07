@@ -67,6 +67,7 @@ UI
 - Moved person band info to main Person panel so it's more easily accessible
 - Event outcome text made bold to increase legibility
 - 'ESC' key now also resumes game when in-game menu is already open
+- Added 'Devotee' hyperlinked concept to make Spiritual Site effects clearer
 - Enkidu added to tutorial screen :)
 
 Bugs Fixed
