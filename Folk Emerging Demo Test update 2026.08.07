@@ -63,6 +63,7 @@ UI
 - Unit summaries now shown in unit button tooltips in Band > Military page
 - Enabled tribe relationship summaries to be accessible via event outcome tooltips
 - Moved person band info to main Person panel so it's more easily accessible
+- Event outcome text made bold to increase legibility
 - 'ESC' key now also resumes game when in-game menu is already open
 - Enkidu added to tutorial screen :)
 
