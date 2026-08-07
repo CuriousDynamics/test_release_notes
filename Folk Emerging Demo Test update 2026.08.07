@@ -46,6 +46,8 @@ Design
 - Players can now back out of battles they have initiated and begun staging, it's only locked in once the "Start Battle" button is pressed
   
 - "Invite to Feast" diplomacy action now costs 30 Food, up from 20
+- Standing Guard production focus now gives -20% Risk from Wildlife per 1 Production, boosted from -5% per 1 Production
+- Climate adaptations now require 3XP in a climate before triggering Level 1 adaptation event, up from 2XP
 
 - Added new tile improvement, Cave Paintings:
   - unlocked with Controlled Fire
