@@ -73,6 +73,7 @@ Bugs Fixed
 
 - Fixed tradeable button sometimes looking interactable when they are not
 - Fixed norm-dependent Reputation modifiers not updating when a person is taken captive by a tribe with different norms
+- Fixed Morale bonus from Standing Guard production focus not applying to new units trained that turn
 
 Known Issues
 
