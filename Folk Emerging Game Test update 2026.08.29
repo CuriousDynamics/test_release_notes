@@ -1,7 +1,7 @@
 Game Test Branch 1.0.3-test 2026-08-29
 
 Design
-  
+- Added "keep playing" option after victory/defeat (WARNING: anything beyond that point is outside the designed experience, will not unlock Steam Achievements, and performance will degrade as global population increases!)
 - Added game creation setting for Victory Threshold, starting with two options: 300 or 400
 - More granular difficulty settings: 
   - Calm (used to be "Easier") 
@@ -26,7 +26,6 @@ UI
 - Green/red in attribute breakdowns now represents "good"/"bad", not just numerically positive/negative
 
 Bugs Fixed
-
 - Fixed Steam achievement for winning on Harder difficulty
 - Fixed Steam achievements for becoming proto-civ worshipping a specific Deity
 - Fixed issue where gaining VP between turns from births enough to cross victory threshold would trigger victory acknowledgement, but if player then dropped below the threshold due to deaths and another player won on the same turn, there would also be a defeat acknowledgement. Now such victory/defeat acknowledgements only trigger at the start of the player's turn.
