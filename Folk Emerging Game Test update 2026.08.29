@@ -1,0 +1,33 @@
+Game Test Branch 1.0.3-test 2026-08-29
+
+Design
+  
+- Added game creation setting for Victory Threshold, starting with two options: 300 or 400
+- More granular difficulty settings: 
+  - Calm (used to be "Easier") 
+  - Favorable (new default)
+  - Precarious (used to be "Standard")
+  - Harsh
+  - Relentless (used to be "Harder")
+- "See map" button on game outcome screen reworked to be "Reveal map" and fully reveals the entire map
+- Increase splitting threshold preferences for non-player bands, they now split less frequently
+- Temples now also give +5 VP
+- Buffed Attack Strength of various units: clubs 2->3; shields 2->3; spears 3->4; daggers 2->3; bows 4->5; raiders 4->6; sumerian war carts 4->6; kurgan chariots 4->6; celtic champions 4->6; indic militia 3->4; chinese ge 4->6
+- Flint now gives +1 Attack Strength instead of +10% Attack Strength
+- All three spiritual site worship point levels now give +1 Culture/turn, down from +1/+2/+3
+- All cultural norms now give +1 Worship Point
+- Clan mediation effect duration increased from 10 turns to 15
+- Positive happiness levels no longer boost Fertility
+- Shaman's boost to Fertility decreased from +10% Fertility per 1 Discipline , to +5% per 1 Discipline
+- Fertility boost from Festivals decreased from +0.2 to +0.1
+- Mount Ararat's devotee bonus to fertility decreased from +0.2 to +0.1
+
+Bugs Fixed
+
+- Fixed Steam achievement for winning on Harder difficulty
+- Fixed Steam achievements for becoming proto-civ worshipping a specific Deity (and retroactively unlocking these achievements on game start-up for anyone that then won the game with each tribe & proto-civ combo)
+- Fixed issue where gaining VP between turns from births enough to cross victory threshold would trigger victory acknowledgement, but if player then dropped below the threshold due to deaths and another player won on the same turn, there would also be a defeat acknowledgement. Now such victory/defeat acknowledgements only trigger at the start of the player's turn.
+- Fixed band splitting UX/UI bugs
+- Fixed saves not loading proving grounds units correctly
+- Fixed production target resource cost being multiplied by bonuses (e.g. Delver), these costs are now deducted as a second-order modifier
+- Fixed transferring specialist from one band to another not taking on new band's tile-based bonuses (e.g. Reliable Freshwater)
