@@ -1,4 +1,4 @@
-Game Test Branch 1.0.3-test 2026-08-29
+Game Test Branch 1.0.3.2-test 2026-08-29
 
 Design
 - Added "keep playing" option after victory/defeat (WARNING: anything beyond that point is outside the designed experience, will not unlock Steam Achievements, and performance will degrade as global population increases!)
