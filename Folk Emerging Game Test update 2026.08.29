@@ -22,6 +22,9 @@ Design
 - Fertility boost from Festivals decreased from +0.2 to +0.1
 - Mount Ararat's devotee bonus to fertility decreased from +0.2 to +0.1
 
+UI
+- Green/red in attribute breakdowns now represents "good"/"bad", not just numerically positive/negative
+
 Bugs Fixed
 
 - Fixed Steam achievement for winning on Harder difficulty
