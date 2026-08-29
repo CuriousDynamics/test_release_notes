@@ -25,7 +25,7 @@ Design
 Bugs Fixed
 
 - Fixed Steam achievement for winning on Harder difficulty
-- Fixed Steam achievements for becoming proto-civ worshipping a specific Deity (and retroactively unlocking these achievements on game start-up for anyone that then won the game with each tribe & proto-civ combo)
+- Fixed Steam achievements for becoming proto-civ worshipping a specific Deity
 - Fixed issue where gaining VP between turns from births enough to cross victory threshold would trigger victory acknowledgement, but if player then dropped below the threshold due to deaths and another player won on the same turn, there would also be a defeat acknowledgement. Now such victory/defeat acknowledgements only trigger at the start of the player's turn.
 - Fixed band splitting UX/UI bugs
 - Fixed saves not loading proving grounds units correctly
