@@ -14,7 +14,7 @@ Design
 - Temples now also give +5 VP
 - Buffed Attack Strength of various units: clubs 2->3; shields 2->3; spears 3->4; daggers 2->3; bows 4->5; raiders 4->6; sumerian war carts 4->6; kurgan chariots 4->6; celtic champions 4->6; indic militia 3->4; chinese ge 4->6
 - Flint now gives +1 Attack Strength instead of +10% Attack Strength
-- All three spiritual site worship point levels now give +1 Culture/turn, down from +1/+2/+3
+- All three spiritual site worship point levels now give +1 Culture/turn, meaning +1/+1/+1 (cumulative) instead of +1/+2/+3 (cumulative) for each level
 - All cultural norms now give +1 Worship Point
 - Clan mediation effect duration increased from 10 turns to 15
 - Positive happiness levels no longer boost Fertility
