@@ -1,13 +1,44 @@
 Game Test Branch 1.0.4-test 2026-09-11
 
 Design
-- 
+- Cultural norm costs increased by +20% per offshoot band in the tribe
+- Relentless difficulty now gives double happiness malus from population (-0.2 per person) rather than a flat -5 Happiness/turn
+- Fertility bonuses from food stockpile sizes decreased: Adequate (0.05 -> 0.03), Comfortable (0.1 -> 0.06), Abundant (0.15 -> 0.1)
+- Risk of Disease tweaks: Temple of Gibil and Temple of Mokosh give -20% instead of -30%; Reliable Freshwater gives -10% instead of -20%; Medicine Rituals give -25% instead of -50%; Cats give -10% instead of -20%; foraging Bistort gives -0.1 instead of -25%
+- Unit Proficiency (renamed from Unit XP) now gives +0.5 Attack Strength per upgrade (was +1)
+- Removed climate adaptation Polar Tundra Tamers as there are currently no domesticable species in the Polar Tundra climate
+- Provisioning cultural norm now also decreases Production by -30%
+- Taxation cultural norm boosts Production by +30% (was +20%)
+- Masons clan now gets +50% Production towards Construction Projects (was +20%), and also gives +25% Band Science/turn while producing Construction Projects
+- Settlers clan now also gets +25% Morale when defending base if Band has not migrated this turn
+- Daggers unit cost now costs 3 Training (was 4)
+- Character development events are less frequent
 
 Programming
-- 
+- Added fullscreen and resolution setting to permanent player preferences
+- Improved weighted random selections
+- Increased odds of more advanced units appearing in proving grounds
 
 UI
-- 
+- Added info about item availability across all bands in item summary tooltips
+- Unit XP renamed to Unit Proficiency, and its description is now clearer about merging units to increase their Proficiency
+- 'Domesticating' production focus now not shown in producibles list until Domestication tech is unlocked, to prevent confusion when domestication points are preemptively gained via climate adaptations before the tech
+- When a category has more than 30 types, the category summary tooltip shows them as comma-separated list rather than bullet-point list so the long lists don't go off-screen
+- Text of each domesticated animal whose Food from Livestock bonus decreases by -20% per Turns Since Migration now mentions it explicitly
+- Added clan symbol to Band column in specialist assignment menu
+- Rounded decimal attribute values in specialist assignment menu
+- Updated text of Neanderthal tribe descriptions and effects to provide more context
+- 'Concede' button in in-game menu no longer interactable after having chosen 'keep playing' after victory/defeat
 
 Bugs Fixed
-- 
+- Fixed loaded saves unequipping unit items
+- Fixed issue where clicking "reveal map" and then starting a new game would leave AI bands visible in the fog of war
+- Fixed previous specialist's name not being shown in role banner when loading a save where previous specialist has died and replacement hasn't yet been assigned
+- Fixed visual bug where if a location used to have a claimed structure (and/or an equipped item) and was then destroyed, then claim/item info would show on animal clusters passing through that location or new structures built there
+- Fixed Royal Archers range to be 5
+- Fixed wrong conditions for Proto-Indic Drainage Works bonus to Irrigation
+- Fixed issue where person who was previously taken captive and then taken back by their original tribe wasn't losing their Captive state
+- Fixed text-bonus mismatch for Proto-Celctic Temple of Aine (Sun deity) and Proto-Egyptian Temple of Geb (Earth deity), now they correctly give Fertility rather than Production
+- Fixed Potatoes only giving 0.5 happiness when foraging instead of 2
+- Fixed issue when a non-player tribe doesn't have a viable proto-civ goal
+- Fixed proto-civ event sometimes only showing "labor and dedication" option
